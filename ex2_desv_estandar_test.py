@@ -8,4 +8,5 @@ import homework
     ([0.5,0.5,1,1], 0.2886)
 ])
 def test_desv_estandar(test_input, expected):
-    assert homework.desv_estandar(test_input) == pytest.approx(expected, 0.0001)
+    assert homework.desv_estandar(test_input) == pytest.approx(expected,
+                                                               abs = 0.0001)

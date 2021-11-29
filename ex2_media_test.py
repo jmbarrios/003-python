@@ -8,4 +8,4 @@ import homework
     ([0.5,0.5,1,2], 1)
 ])
 def test_media(test_input, expected):
-    assert homework.media(test_input)==expected
+    assert homework.media(test_input) == pytest.approx(expected, abs=0.1)
